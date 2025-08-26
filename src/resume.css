@@ -21,6 +21,7 @@
   }
   }
  */
+
 .resume-container {
   background-color: white;
   max-width: 900px;
@@ -76,4 +77,72 @@
 ul {
   margin: 0;
   padding-left: 1.2rem;
+}
+
+
+.resume {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.resume-header {
+  text-align: center;
+  border-bottom: 2px solid #0077b6;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.resume-header h1 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  color: #023e8a;
+}
+
+.resume-header a {
+  color: #0077b6;
+  text-decoration: none;
+}
+
+.resume-header a:hover {
+  text-decoration: underline;
+}
+
+section {
+  margin-bottom: 25px;
+}
+
+section h2 {
+  font-size: 1.4rem;
+  color: #023e8a;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.job, .project {
+  margin-bottom: 15px;
+}
+
+.job h3, .project h3 {
+  font-size: 1.1rem;
+  color: #0077b6;
+}
+
+.job p, .project p {
+  margin: 5px 0;
+}
+
+ul {
+  margin: 8px 0 8px 20px;
+}
+
+ul li {
+  list-style: disc;
 }

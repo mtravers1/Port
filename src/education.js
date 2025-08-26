@@ -21,16 +21,11 @@ const Education = ()=>{
             </div>
               <div>
                 <h2>Computer Science Masters Degree</h2>
-                <p>District of Columbia Infrastructure Academy</p>
-                <p>January 2025 -May 2024</p>
+                <p>University of the District of Columbia</p>
+                <p>January 2025 -May 2025</p>
 
             </div>
-              <div>
-                <h2>DOES Network Engineering Training</h2>
-                <p>District of Columbia Infrastructure Academy</p>
-                <p>November 2023-May 2024</p>
-
-            </div>
+      
             </div>
 
         </div>

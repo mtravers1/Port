@@ -14,6 +14,7 @@ import clothes from './clothingstore.png'
 import cybersecurity from './images/logos/cybersecurity.png'
 import diabetes from './images/logos/diabetes.png'
 const Projects = ()=>{
+
       const [mydada, setMydada]=useState([
        
 // {id:1, name:"Configuring a Network", 
@@ -38,9 +39,9 @@ const Projects = ()=>{
 // startdate:8.2023, 
 // enddate:9.2023},
 // {id:4, name:"Fitness Website", tools:"Figma, MongoDB, Express and Node", description:"Designed a fitness application using Figma, MongoDB, Express, and Node. Developed front-end using HTML, Tailwind, and JavaScript. Implemented global state management using Context hook.", link:"No Link", git:"https://github.com/mtravers1/MyPortfolio", startdate:2.2023, enddate:2.2023},
-{id:1, name:"Phishing Campaign", tools:"Phishing", description:"", link:"https://oceanbitefood.com/",  image:phishing, git:"", startdate: 7.2025, enddate:2.2024},
-{id:1, name:"Drone CyberSecurity", tools:"NIST", description:"", link:"",  image:cybersecurity, git:"", startdate: 3.2025, enddate:5.2024},
-{id:1, name:"Diabetes Prediction", tools:"Machine Learning", description:"", link:"",  image:diabetes, git:"", startdate: 3.2025, enddate:5.2024},
+{id:1, name:"Phishing Campaign", tools:"Phishing", description:"Developed a simulated phishing website to demonstrate social engineering techniques and test user awareness, highlighting common attack vectors used by cybercriminals. Designed the project as part of a cybersecurity initiative to analyze user behavior, strengthen defensive measures, and improve organizational security awareness training.", link:"https://oceanbitefood.com/",  image:phishing, git:"", startdate: 7.2025, enddate:2.2024},
+{id:1, name:"Drone CyberSecurity", tools:"NIST", description:"Conduct a study to examine and analyzes the latest developments in drone security and vulnerabilities, with a focus on bringing forth a layered framework in counter-drone systems, changes in regulatory policies, and the rise of cybersecurity vulnerabilities affecting UAV", link:"",  image:cybersecurity, git:"", startdate: 3.2025, enddate:5.2024},
+{id:1, name:"Diabetes Prediction", tools:"Machine Learning", description:"Conduct a study to compare different machine learning models—SVM, Decision Trees, Linear Regression, Random Forest, and KNN—using a 2025 Kaggle dataset to identify the most effective classification method for diabetes prediction, enhancing predictive analytics in healthcare.", link:"https://github.com/mtravers1/DiabetesPrediction",  image:diabetes, git:"https://github.com/mtravers1/DiabetesPrediction", startdate: 3.2025, enddate:5.2024},
 {id:1, name:"IGotchabailbonds Website", tools:"NextJs, Redux, Postman, Javascript, Html, CSS, Tailwind", description:"Created a Jail Bonds website using Next JS, TypeScript, and Tailwind. Set up a JSON server, connect login/registration to the endpoint using Axios. Utilized Redux for language conversion.", link:"https://www.i-gotchabailbonds.com/",  image:igb, git:"", startdate:1.2023, enddate:2.2024},
 {id:2, image:qu, name:"Quik-Influence Marketplace Website", tools:"NextJs, TypeScript, Tailwind", description:"Assisted in the development of an online retail marketplace using ReactJS and TypeScript. Added CSS changes, login/register pages, and deployed through AWS Amplify.", link:"https://www.quikinfluence.com/", git:"", startdate:12.2022, enddate:1.2023},
 {id:3, image:asd, name:"Alliance Software Development Website", 
@@ -113,13 +114,13 @@ enddate:12.2021},
         <div className='project' style={{padding:"20px"}}>
          
           <a href={d.link} ><img width={80} src={d.image}/></a>
-          <h3 id='name'>{d.name}</h3>
+          <h3  style={{color:'white'}} id='name'>{d.name}</h3>
          
 
-          <h3>{d.tools}</h3>
+          <h3  style={{color:'white'}}>{d.tools}</h3>
           
 
-          <h3>{d.description}</h3>
+          <h3 style={{color:'white'}}>{d.description}</h3>
           
 
           <a style={{textDecoration:'none', color:'white', fontSize:'large',fontWeight:'bold'}} href={d.link} >{d.name}</a><br/><br/>
