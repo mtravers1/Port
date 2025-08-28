@@ -1,4 +1,12 @@
 
+
+
+
+
+
+
+
+
 import React, { useState } from 'react'
 import quik from './images/logos/quikin.png'
 import './projects.css'
@@ -16,11 +24,15 @@ import diabetes from './images/logos/diabetes.png'
 
 const Projects = () => {
     const [mydada, setMydada] = useState([
+//       {id:1, name:"Phishing Campaign", tools:"Phishing", description:"Developed a simulated phishing website to demonstrate social engineering techniques and test user awareness, highlighting common attack vectors used by cybercriminals. Designed the project as part of a cybersecurity initiative to analyze user behavior, strengthen defensive measures, and improve organizational security awareness training.", link:"https://oceanbitefood.com/",  image:phishing, git:"", startdate: 7.2025, enddate:2.2024},
+// {id:1, name:"Drone CyberSecurity", tools:"NIST", description:"Conduct a study to examine and analyzes the latest developments in drone security and vulnerabilities, with a focus on bringing forth a layered framework in counter-drone systems, changes in regulatory policies, and the rise of cybersecurity vulnerabilities affecting UAV", link:"",  image:cybersecurity, git:"", startdate: 3.2025, enddate:5.2024},
+// {id:1, name:"Diabetes Prediction", tools:"Machine Learning", description:"Conduct a study to compare different machine learning models—SVM, Decision Trees, Linear Regression, Random Forest, and KNN—using a 2025 Kaggle dataset to identify the most effective classification method for diabetes prediction, enhancing predictive analytics in healthcare.", link:"https://github.com/mtravers1/DiabetesPrediction",  image:diabetes, git:"https://github.com/mtravers1/DiabetesPrediction", startdate: 3.2025, enddate:5.2024},
+
     {
       id: 1,
       name: "Phishing Campaign",
       tools: "Phishing",
-      description: "Developed a simulated phishing website...",
+      description: "Developed a simulated phishing website to demonstrate social engineering techniques and test user awareness, highlighting common attack vectors used by cybercriminals. Designed the project as part of a cybersecurity initiative to analyze user behavior, strengthen defensive measures, and improve organizational security awareness training.",
       link: "https://oceanbitefood.com/",
       image: phishing,
       git: "",
@@ -31,7 +43,7 @@ const Projects = () => {
       id: 2,
       name: "Drone CyberSecurity",
       tools: "NIST",
-      description: "Conduct a study to examine and analyze...",
+      description: "Conduct a study to examine and analyzes the latest developments in drone security and vulnerabilities, with a focus on bringing forth a layered framework in counter-drone systems, changes in regulatory policies, and the rise of cybersecurity vulnerabilities affecting UAV",
       link: "",
       image: cybersecurity,
       git: "",
@@ -45,7 +57,7 @@ const Projects = () => {
       name: "Diabetes Prediction",
       tools: "Machine Learning",
       description:
-        "Conduct a study to compare different machine learning models...",
+        "Conduct a study to compare different machine learning models—SVM, Decision Trees, Linear Regression, Random Forest, and KNN—using a 2025 Kaggle dataset to identify the most effective classification method for diabetes prediction, enhancing predictive analytics in healthcare.",
       link: "https://github.com/mtravers1/DiabetesPrediction",
       image: diabetes,
       git: "https://github.com/mtravers1/DiabetesPrediction",
