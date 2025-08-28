@@ -1,5 +1,5 @@
-import React from 'react'
-import { useState } from 'react'
+
+import React, { useState } from 'react'
 import quik from './images/logos/quikin.png'
 import './projects.css'
 import igb from './i-gotcha-bailbonds.png'
@@ -13,36 +13,58 @@ import phishing from './images/logos/phishing.png'
 import clothes from './clothingstore.png'
 import cybersecurity from './images/logos/cybersecurity.png'
 import diabetes from './images/logos/diabetes.png'
-const Projects = ()=>{
 
-      const [mydada, setMydada]=useState([
-       
-// {id:1, name:"Configuring a Network", 
-// tools:"Subnetting, IP address, Command Line Interface, Inter vlan Routing", 
-// description:"Set up and configure a Network by physically connecting end and intermediate devices. Create IP addresses using subnetting. Use the Command Line Interface to assign addresses to each interface. Use telnet and ssh to connect remotely.  Use inter vlan routing for a SVI to create sub interfaces.", 
-// link:"", 
-// git:"", 
-// startdate:1.2024, 
-// enddate:1.2024},
-//     {id:2, name:"Content Calendar", 
-// tools:"Spring Boot, PostgreSQL, Jquery", 
-// description:"Developed a calendar application with Spring Boot, PostgreSQL, and jQuery. Implemented MVC and N-Tier Architecture. Stylized the webpage using Bootstrap and jQuery.", 
-// link:"", 
-// git:"", 
-// startdate:2.2023, 
-// enddate:2.2023},
-// {id:3, name:"Concert Application", 
-// tools:"Cold Fusion, Oracle, Bootstrap", 
-// description:"Created a dynamic web application using ColdFusion IDE, connected to an Oracle database. Added a user submission form and applied Bootstrap for styling.", 
-// link:"No Link", 
-// git:"", 
-// startdate:8.2023, 
-// enddate:9.2023},
-// {id:4, name:"Fitness Website", tools:"Figma, MongoDB, Express and Node", description:"Designed a fitness application using Figma, MongoDB, Express, and Node. Developed front-end using HTML, Tailwind, and JavaScript. Implemented global state management using Context hook.", link:"No Link", git:"https://github.com/mtravers1/MyPortfolio", startdate:2.2023, enddate:2.2023},
-{id:1, name:"Phishing Campaign", tools:"Phishing", description:"Developed a simulated phishing website to demonstrate social engineering techniques and test user awareness, highlighting common attack vectors used by cybercriminals. Designed the project as part of a cybersecurity initiative to analyze user behavior, strengthen defensive measures, and improve organizational security awareness training.", link:"https://oceanbitefood.com/",  image:phishing, git:"", startdate: 7.2025, enddate:2.2024},
-{id:1, name:"Drone CyberSecurity", tools:"NIST", description:"Conduct a study to examine and analyzes the latest developments in drone security and vulnerabilities, with a focus on bringing forth a layered framework in counter-drone systems, changes in regulatory policies, and the rise of cybersecurity vulnerabilities affecting UAV", link:"",  image:cybersecurity, git:"", startdate: 3.2025, enddate:5.2024},
-{id:1, name:"Diabetes Prediction", tools:"Machine Learning", description:"Conduct a study to compare different machine learning models—SVM, Decision Trees, Linear Regression, Random Forest, and KNN—using a 2025 Kaggle dataset to identify the most effective classification method for diabetes prediction, enhancing predictive analytics in healthcare.", link:"https://github.com/mtravers1/DiabetesPrediction",  image:diabetes, git:"https://github.com/mtravers1/DiabetesPrediction", startdate: 3.2025, enddate:5.2024},
-{id:1, name:"IGotchabailbonds Website", tools:"NextJs, Redux, Postman, Javascript, Html, CSS, Tailwind", description:"Created a Jail Bonds website using Next JS, TypeScript, and Tailwind. Set up a JSON server, connect login/registration to the endpoint using Axios. Utilized Redux for language conversion.", link:"https://www.i-gotchabailbonds.com/",  image:igb, git:"", startdate:1.2023, enddate:2.2024},
+const Projects = () => {
+    const [mydada, setMydada] = useState([
+    {
+      id: 1,
+      name: "Phishing Campaign",
+      tools: "Phishing",
+      description: "Developed a simulated phishing website...",
+      link: "https://oceanbitefood.com/",
+      image: phishing,
+      git: "",
+      startdate: 7.2025,
+      enddate: 2.2024,
+    },
+    {
+      id: 2,
+      name: "Drone CyberSecurity",
+      tools: "NIST",
+      description: "Conduct a study to examine and analyze...",
+      link: "",
+      image: cybersecurity,
+      git: "",
+      startdate: 3.2025,
+      enddate: 5.2024,
+      pdf: "/CyberSecurity.pdf", // 👈 add the pdf path (put file in public/)
+      powerpoint:"/Dronepowerpoint.pdf"
+    },
+    {
+      id: 3,
+      name: "Diabetes Prediction",
+      tools: "Machine Learning",
+      description:
+        "Conduct a study to compare different machine learning models...",
+      link: "https://github.com/mtravers1/DiabetesPrediction",
+      image: diabetes,
+      git: "https://github.com/mtravers1/DiabetesPrediction",
+      startdate: 3.2025,
+      enddate: 5.2024,
+      pdf: "/DataScienceDiabetesPredictions.pdf", // 👈 add the pdf path (put file in public/)
+      powerpoint:"/Diabetespowerpoint.pdf"
+    },
+    {
+      id: 4,
+      name: "IGotchabailbonds Website",
+      tools: "NextJs, Redux, Postman, Javascript, Html, CSS, Tailwind",
+      description: "Created a Jail Bonds website...",
+      link: "https://www.i-gotchabailbonds.com/",
+      image: igb,
+      git: "",
+      startdate: 1.2023,
+      enddate: 2.2024,
+    },
 {id:2, image:qu, name:"Quik-Influence Marketplace Website", tools:"NextJs, TypeScript, Tailwind", description:"Assisted in the development of an online retail marketplace using ReactJS and TypeScript. Added CSS changes, login/register pages, and deployed through AWS Amplify.", link:"https://www.quikinfluence.com/", git:"", startdate:12.2022, enddate:1.2023},
 {id:3, image:asd, name:"Alliance Software Development Website", 
 tools:"ReactJs, JavaScript, CSS", 
@@ -88,88 +110,157 @@ image:{quik},
 tools:"Python, google colab, NLP", 
 description:"Developed a Python program for cyberbullying detection using various Natural Language Processing methods. Tested/trained the model for accuracy using a Twitter dataset.", 
 link:"", 
-git:"", 
+git:"",
+pdf:"/FinalCyberBullyin.pdf",
+powerpoint:'/FinalCyberBullyingpowerpoint.pdf', 
 startdate:10.2021, 
 enddate:12.2021},
-
-])
-
-  const [dada, setDada]=useState([])
-  const [id, setId]=useState('')
-  const [name, setName]=useState('')
-  const [tools, setTools]=useState('')
-  const [description, setDescription]=useState('')
-  const [link, setLink]=useState('')
-  const [git, setGit]=useState('')
-  const [startdate, setStatedate]=useState('')
-  const [enddate, setEnddate]=useState('')
-  const url="http://localhost:8080"
-    return(
-                <div style={{width:"100%"}}>
-                    <h1 style={{textAlign:"center"}}>Projects</h1>
-    <div style={{display:"flex", flexDirection:"row", flexWrap:"wrap", justifyContent:"center"}} className='projects'>
-
-    {
-      mydada.map((d)=>(
-        <div className='project' style={{padding:"20px"}}>
-         
-          <a href={d.link} ><img width={80} src={d.image}/></a>
-          <h3  style={{color:'white'}} id='name'>{d.name}</h3>
-         
-
-          <h3  style={{color:'white'}}>{d.tools}</h3>
-          
-
-          <h3 style={{color:'white'}}>{d.description}</h3>
-          
-
-          <a style={{textDecoration:'none', color:'white', fontSize:'large',fontWeight:'bold'}} href={d.link} >{d.name}</a><br/><br/>
-          
+  ])
 
 
-          <a style={{textDecoration:'none', color:'white', fontSize:'large',fontWeight:'bold'}} href={d.git}><i></i>Github</a>
-            
+  // 👇 track which project has PDF open
+  const [openPdfId, setOpenPdfId] = useState(null)
+  const [openPP, setOpenPP]=useState(null)
 
-          <h3>{d.startdate} - {d.enddate}</h3>
-          
+  return (
+    <div style={{ width: "100%" }}>
+      <h1 style={{ textAlign: "center" }}>Projects</h1>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          flexWrap: "wrap",
+          justifyContent: "center",
+        }}
+        className="projects"
+      >
+        {mydada.map((d) => (
+          <div key={d.id} className="project" style={{ padding: "20px", width: "300px" }}>
+            <a href={d.link}>
+              <img width={80} src={d.image} alt={d.name} />
+            </a>
+            <h3 style={{ color: "white" }}>{d.name}</h3>
+            <h3 style={{ color: "white" }}>{d.tools}</h3>
+            <h3 style={{ color: "white" }}>{d.description}</h3>
 
-         
+            <a
+              style={{ textDecoration: "none", color: "white", fontSize: "large", fontWeight: "bold" }}
+              href={d.link}
+            >
+              {d.name}
+            </a>
+            <br /><br />
+
+            <a
+              style={{ textDecoration: "none", color: "white", fontSize: "large", fontWeight: "bold" }}
+              href={d.git}
+            >
+              Github
+            </a>
+
+            <h3>
+              {d.startdate} - {d.enddate}
+            </h3>
+
+            {/* 👇 Show button ONLY if pdf exists */}
+    {/* PDF Section */}
+{/* PDF Section */}
+{d.pdf && (
+  <>
+    <button
+      onClick={() => setOpenPdfId(openPdfId === d.id ? null : d.id)}
+      style={{
+        marginTop: "10px",
+        padding: "12px 24px",
+        background: "#2563eb", // blue-600
+        color: "white",
+        fontWeight: "bold",
+        border: "none",
+        borderRadius: "8px",
+        cursor: "pointer",
+        transition: "all 0.3s ease",
+      }}
+      onMouseOver={(e) => (e.target.style.background = "#1d4ed8")}
+      onMouseOut={(e) => (e.target.style.background = "#2563eb")}
+    >
+      {openPdfId === d.id ? "Close PDF" : "Open PDF"}
+    </button>
+
+    {openPdfId === d.id && (
+      <div
+        style={{
+          marginTop: "20px",
+          background: "#f9fafb",
+          borderRadius: "12px",
+          boxShadow: "0px 6px 16px rgba(0,0,0,0.2)",
+          overflow: "hidden",
+          width: "100%",
+          height: "80vh", // 👈 Makes it taller for readability
+        }}
+      >
+        <iframe
+          src={d.pdf}
+          width="100%"
+          height="100%"
+          style={{ border: "none", borderRadius: "12px" }}
+          title={`${d.name} PDF`}
+        ></iframe>
+      </div>
+    )}
+  </>
+)}
+
+{/* PowerPoint Section */}
+{d.powerpoint && (
+  <>
+    <button
+      onClick={() => setOpenPP(openPP === d.id ? null : d.id)}
+      style={{
+        marginTop: "10px",
+        padding: "12px 24px",
+        background: "#16a34a", // green-600
+        color: "white",
+        fontWeight: "bold",
+        border: "none",
+        borderRadius: "8px",
+        cursor: "pointer",
+        transition: "all 0.3s ease",
+      }}
+      onMouseOver={(e) => (e.target.style.background = "#15803d")}
+      onMouseOut={(e) => (e.target.style.background = "#16a34a")}
+    >
+      {openPP === d.id ? "Close PowerPoint" : "Open PowerPoint"}
+    </button>
+
+    {openPP === d.id && (
+      <div
+        style={{
+          marginTop: "20px",
+          background: "#f9fafb",
+          borderRadius: "12px",
+          boxShadow: "0px 6px 16px rgba(0,0,0,0.2)",
+          overflow: "hidden",
+          width: "100%",
+          height: "80vh", // 👈 Matches PDF height
+        }}
+      >
+        <iframe
+          src={`https://view.officeapps.live.com/op/embed.aspx?src=${window.location.origin}${d.powerpoint}`}
+          width="100%"
+          height="100%"
+          style={{ border: "none", borderRadius: "12px" }}
+          title={`${d.name} PowerPoint`}
+        ></iframe>
+      </div>
+    )}
+  </>
+)}
+
           </div>
-      ))
-    }
-    {/* {
-      mydada.map((d)=>(
-        <div className='card' style={{margin:"20px", width:"25%"}} key={d.id}>
-          <img src={d.image}/>
-          <h3>Name: {d.name}</h3>
-         
-
-          <h3>tools: {d.tools}</h3>
-          
-
-          <h3>description: {d.description}</h3>
-          
-
-          <h3>Link: </h3>
-          <a href={d.link} >{d.name}</a>
-          
-
-          <h3>Git: </h3>
-          <a href={d.git}>Githut:{d.name}</a>
-            
-
-          <h3>Start Date: {d.startdate}</h3>
-          
-
-          <h3>End Date: {d.enddate}</h3>
-          
-          </div>
-      ))
-    } */}
+        ))}
+      </div>
     </div>
-
-    </div>
-    )
+  )
 }
 
 export default Projects

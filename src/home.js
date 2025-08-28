@@ -16,7 +16,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import Banner from './components/banner'
-
+// import pdf from '../public/DataScienceDiabetesPredictions.pdf'
 
 
 const Homes=()=>{
@@ -116,6 +116,9 @@ const Homes=()=>{
                 <div className="about">
   <div className="about-text">
     <p id="welcome">Welcome to my portfolio.</p>
+
+ 
+
     <p id="take">
       A Computer Science professional with
       experience in <b>full-stack development, networking, and cybersecurity</b>.
