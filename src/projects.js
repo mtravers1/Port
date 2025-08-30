@@ -70,7 +70,7 @@ const Projects = () => {
       id: 4,
       name: "IGotchabailbonds Website",
       tools: "NextJs, Redux, Postman, Javascript, Html, CSS, Tailwind",
-      description: "Created a Jail Bonds website...",
+      description: "Collaborated with senior developers to create a responsive Jail Bonds web application using Next.js and Tailwind CSS, optimizing accessibility and usability across devices. Enhanced functionality with Redux for language conversion and ensured reliable API communication through testing with Axios and Postman",
       link: "https://www.i-gotchabailbonds.com/",
       image: igb,
       git: "",
@@ -123,7 +123,7 @@ tools:"Python, google colab, NLP",
 description:"Developed a Python program for cyberbullying detection using various Natural Language Processing methods. Tested/trained the model for accuracy using a Twitter dataset.", 
 link:"", 
 git:"",
-pdf:"/FinalCyberBullyin.pdf",
+pdf:"/CyberBullyingpaper.pdf",
 powerpoint:'/FinalCyberBullyingpowerpoint.pdf', 
 startdate:10.2021, 
 enddate:12.2021},
@@ -257,7 +257,7 @@ enddate:12.2021},
         }}
       >
         <iframe
-          src={`https://view.officeapps.live.com/op/embed.aspx?src=${window.location.origin}${d.powerpoint}`}
+          src={d.powerpoint}
           width="100%"
           height="100%"
           style={{ border: "none", borderRadius: "12px" }}
