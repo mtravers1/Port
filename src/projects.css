@@ -8,6 +8,11 @@
 img{
     width: 100%;
 }
+.pdf-container {
+  height: 80vh; /* desktop default */
+}
+
+
 
 @media(max-width:800px){
     .projects{
@@ -32,4 +37,20 @@ img{
     img{
         margin:10px
     }
+    
+}
+
+/* On tablets */
+@media (max-width: 1024px) {
+  .pdf-container {
+    height: 70vh;
+  }
+}
+
+/* On small mobile screens */
+@media (max-width: 600px) {
+  .pdf-container {
+    height: 60vh;   /* smaller height for phones */
+    overflow-y: auto;
+  }
 }
