@@ -198,27 +198,34 @@ enddate:12.2021},
       {openPdfId === d.id ? "Close PDF" : "Open PDF"}
     </button>
 
-    {openPdfId === d.id && (
-      <div
-        style={{
-          marginTop: "20px",
-          background: "#f9fafb",
-          borderRadius: "12px",
-          boxShadow: "0px 6px 16px rgba(0,0,0,0.2)",
-          overflow: "hidden",
-          width: "100%",
-          height: "80vh", // 👈 Makes it taller for readability
-        }}
-      >
-        <iframe 
-          src={d.pdf}
-          width="100%"
-          height="100%"
-          style={{ border: "none", borderRadius: "12px" }}
-          title={`${d.name} PDF`}
-        ></iframe>
-      </div>
-    )}
+   {openPdfId === d.id && (
+  <div
+    style={{
+      marginTop: "20px",
+      background: "#f9fafb",
+      borderRadius: "12px",
+      boxShadow: "0px 6px 16px rgba(0,0,0,0.2)",
+      overflow: "hidden",
+      width: "100%",
+      height: "80vh", // default for desktops
+      maxHeight: "90vh", // don’t overflow screen
+    }}
+    className="pdf-container"
+  >
+    <iframe
+      src={d.pdf}
+      width="100%"
+      height="100%"
+      style={{
+        border: "none",
+        borderRadius: "12px",
+        display: "block",
+      }}
+      title={`${d.name} PDF`}
+    ></iframe>
+  </div>
+)}
+
   </>
 )}
 
@@ -243,28 +250,34 @@ enddate:12.2021},
     >
       {openPP === d.id ? "Close PowerPoint" : "Open PowerPoint"}
     </button>
+{openPP === d.id && (
+  <div
+    style={{
+      marginTop: "20px",
+      background: "#f9fafb",
+      borderRadius: "12px",
+      boxShadow: "0px 6px 16px rgba(0,0,0,0.2)",
+      overflow: "hidden",
+      width: "100%",
+      height: "80vh", // default for desktops
+      maxHeight: "90vh", // don’t overflow screen
+    }}
+    className="pdf-container"
+  >
+    <iframe
+      src={d.powerpoint}
+      width="100%"
+      height="100%"
+      style={{
+        border: "none",
+        borderRadius: "12px",
+        display: "block",
+      }}
+      title={`${d.name} PDF`}
+    ></iframe>
+  </div>
+)}
 
-    {openPP === d.id && (
-      <div
-        style={{
-          marginTop: "20px",
-          background: "#f9fafb",
-          borderRadius: "12px",
-          boxShadow: "0px 6px 16px rgba(0,0,0,0.2)",
-          overflow: "hidden",
-          width: "100%",
-          height: "80vh", // 👈 Matches PDF height
-        }}
-      >
-        <iframe
-          src={d.powerpoint}
-          width="100%"
-          height="100%"
-          style={{ border: "none", borderRadius: "12px" }}
-          title={`${d.name} PowerPoint`}
-        ></iframe>
-      </div>
-    )}
   </>
 )}
 
