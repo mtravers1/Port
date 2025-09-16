@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import CoverLetter from './components/coverletter';
 import './App.css';
 import { useState, useEffect } from 'react';
 import Navbar from './components/navbar';
@@ -174,6 +175,9 @@ Additionally, my coursework in Cloud Security, Data Science, and Data Engineerin
                         <Banner/>
 
     
+    </div>
+    <div>
+    <CoverLetter/>
     </div>
   
     </div>
