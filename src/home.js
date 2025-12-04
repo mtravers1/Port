@@ -177,8 +177,8 @@ Additionally, my coursework in Cloud Security, Data Science, and Data Engineerin
     
     </div>
     <div>
-    <CoverLetter/>
     </div>
+    <Projects/>
   
     </div>
   );
